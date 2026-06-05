@@ -5,9 +5,10 @@
 #load readxl
 library(readxl)
 library(tidyverse)
+library(here)
 
 # import file 
-chr <- read_excel("rawdata/2025CHRcopy.xlsx", 
+chr <- read_excel(here("data","source", "2025CHRcopy.xlsx"), 
                   sheet = "Select Measure Data", 
                   skip=1)
 View(chr)
